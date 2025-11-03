@@ -1,0 +1,16 @@
+{
+  "requires": {
+    "jobscheduler": {
+      "kind": "rest",
+      "credentials": {
+        "destination": "jobscheduler"
+      }
+    },
+    "objectStore": {
+      "kind": "rest"
+    }
+  },
+  "odata": {
+    "version": "v4"
+  }
+}

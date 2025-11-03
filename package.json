@@ -1,0 +1,28 @@
+{
+  "name": "cap-aws-s3-monitoring",
+  "version": "1.0.0",
+  "description": "CAP application that monitors SAP Object Store for new files via scheduled jobs.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "deploy": "cds deploy --to sqlite"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.523.0",
+    "@aws-sdk/lib-storage": "^3.523.0",
+    "@cap-js/hana": "^1.0.0",
+    "@sap-cloud-sdk/http-client": "^3.18.0",
+    "@sap-cloud-sdk/resilience": "^3.18.0",
+    "@sap/cds": "^7.8.0",
+    "@sap/jobs-client": "^1.8.6",
+    "@sap/xsenv": "^4.3.1",
+    "@sap/xssec": "^4.3.3"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
