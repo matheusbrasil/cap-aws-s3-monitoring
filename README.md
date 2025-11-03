@@ -104,3 +104,4 @@ curl "http://localhost:4004/odata/v4/MonitoringService/TrackedFiles"
 - The default database is SQLite for local development. Deploy to SAP HANA using the `@cap-js/hana` driver when running in SAP BTP.
 - The SAP Job Scheduling client uses optimistic upsert logic. Ensure the application has the necessary scope grants to manage jobs.
 - The SAP Cloud SDK `executeHttpRequest` call is wrapped by a circuit breaker, avoiding repeated calls to an unhealthy Job Scheduler endpoint.
+- Runtime dependencies in `package.json` are aligned to the latest published versions (including CAP v9 and newer SAP Cloud SDK releases). Re-run `npm install` to resolve updates before deploying.
